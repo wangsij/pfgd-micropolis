@@ -120,6 +120,7 @@ public class Micropolis
 	int churchCount;
 	int policeCount;
 	int fireStationCount;
+	int floodStationCount; //added for flood station
 	int stadiumCount;
 	int coalCount;
 	int nuclearCount;
@@ -177,6 +178,7 @@ public class Micropolis
 	int roadEffect = 32;
 	int policeEffect = 1000;
 	int fireEffect = 1000;
+	int floodEffect = 1; //added floodEffect
 
 	int cashFlow; //net change in totalFunds in previous year
 
@@ -885,6 +887,7 @@ public class Micropolis
 	{
 		if (floodCnt > 0) {
 			floodCnt--;
+			//conditions on existence of flood department to decrease flood count
 		}
 
 		final int [] DisChance = { 480, 240, 60 };

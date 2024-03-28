@@ -655,7 +655,23 @@ public class MainWindow extends JFrame
 			}
 			}));
 		disastersMenu.add(menuItem);
-
+		
+		//flood menu added
+		JMenu floodMenu = new JMenu(strings.getString("menu.flood"));
+		//no hotkeys here
+		menuBar.add(floodMenu);
+		menuItem = new JMenuItem(strings.getString("menu.flood.invest100"));
+		
+		menuItem.addActionListener(wrapActionListener(
+				new ActionListener() {
+				public void actionPerformed(ActionEvent ev)
+				{
+					//show up on the message, and deduct 100 from the funding
+					System.out.println("Invest $100");
+				}
+				}));
+		floodMenu.add(menuItem);
+		
 		JMenu priorityMenu = new JMenu(strings.getString("menu.speed"));
 		setupKeys(priorityMenu, "menu.speed");
 		menuBar.add(priorityMenu);

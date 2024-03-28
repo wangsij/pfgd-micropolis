@@ -38,6 +38,7 @@ class MapScanner extends TileBehavior
 		NUCLEAR,
 		FIRESTATION,
 		POLICESTATION,
+		FLOODSTATION, //flood station added
 		STADIUM_EMPTY,
 		STADIUM_FULL,
 		AIRPORT,
@@ -251,6 +252,7 @@ class MapScanner extends TileBehavior
 
 		city.policeMap[ypos/8][xpos/8] += z;
 	}
+
 
 	void doStadiumEmpty()
 	{
