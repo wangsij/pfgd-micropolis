@@ -178,7 +178,7 @@ public class Micropolis
 	int roadEffect = 32;
 	int policeEffect = 1000;
 	int fireEffect = 1000;
-	int floodEffect = 1; //added floodEffect
+	public int floodEffect = 1; //added floodEffect
 
 	int cashFlow; //net change in totalFunds in previous year
 

@@ -113,9 +113,9 @@ class TerrainBehavior extends TileBehavior
 		{
 			for (int z = 0; z < 4; z++)
 			{
-				int floodRiskReduction = 40;
+				
 				//can reduce the flood spreading here
-				if (PRNG.nextInt(8 + floodRiskReduction) == 0) {
+				if (PRNG.nextInt(8 + city.floodEffect) == 0) {
 					int xx = xpos + DX[z];
 					int yy = ypos + DY[z];
 					if (city.testBounds(xx, yy)) {
