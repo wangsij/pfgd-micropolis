@@ -668,6 +668,7 @@ public class MainWindow extends JFrame
 				{
 					//show up on the message, and deduct 100 from the funding
 					System.out.println("Invest $100");
+					messagesPane.appendCityMessage(MicropolisMessage.FLOOD_REDUCE);
 				}
 				}));
 		floodMenu.add(menuItem);

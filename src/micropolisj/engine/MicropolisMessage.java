@@ -58,6 +58,7 @@ public enum MicropolisMessage
 	FLOOD_REPORT,
 	MELTDOWN_REPORT,        // 43            doMeltdown
 	RIOTING_REPORT,
+	FLOOD_REDUCE,
 
 	// added by Jason
 	NO_NUCLEAR_PLANTS;
@@ -78,6 +79,7 @@ public enum MicropolisMessage
 
 	// location-specific
 	FLOOD_REPORT.useNotificationPane = true;
+	FLOOD_REDUCE.useNotificationPane = true;
 	FIRE_REPORT.useNotificationPane = true;
 	TORNADO_REPORT.useNotificationPane = true;
 	MELTDOWN_REPORT.useNotificationPane = true;
